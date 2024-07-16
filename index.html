@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- start Style -->
+    <link rel="stylesheet" href="style.css">
+    <title>store</title>
+</head>
+<body>
+    <main>
+        <!-- start header -->
+        <header>
+            <!-- start title -->
+            <h2><span>My</span> Store</h2>
+            <!-- end title -->
+
+            <!-- start filters -->
+            <form novalidate>
+                <div class="search-box">
+                    <input type="text" class="input-search" placeholder="Search for products...">
+                    <button id="btn-search">search</button>
+                </div>
+                
+                
+                <div class="inputs-filter">
+
+                    <select class="select-cat" name="" id="">
+                        <option value="all">All Categories</option>
+                        <option value="electronics">electronics</option>
+                        <option value="jewelery">jewelery</option>
+                        <option value="men's clothing">men's clothing</option>
+                        <option value="women's clothing">women's clothing</option>
+                    </select>
+
+                    <input type="number" placeholder="min price" class="min-price" name="" id="">
+                    <input type="number" placeholder="max price" class="max-price" name="" id="">
+                    
+                    <select class="select-sort" name="" id="">
+                        <option value="A">Alphabetically, A-Z</option>
+                        <option value="Z">Alphabetically, Z-A</option>
+                        <option value="Z">Price, High to low</option>
+                        <option value="Z">Price, Low to High</option>
+                    </select>
+                </div>
+            </form>
+            <!-- end filters -->
+
+            <!-- star cart -->
+            <div class="cart-list">
+                <h4>shopping cart</h4>
+                <ol class="list-cart">
+                </ol>
+                <div class="total">
+                    <h5>total quantity: <span class="totalQuantity">0</span></h5>
+                    <h5>total price: <span class="totalPrice">$0</span></h5>
+                </div>
+            </div>
+            <!-- end cart -->
+        </header>
+        <!-- start header -->
+
+        <!-- start Products -->
+        <section class="products-sec">
+            <div class="title">
+                <h2>Products</h2>
+            </div>
+            
+            <div class="products" >
+            </div>
+
+            <div class="pagination">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+            </div>
+        </section>
+        <!-- end Products -->
+
+    </main>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
